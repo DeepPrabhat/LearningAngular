@@ -1,1 +1,7 @@
-<p>child works!</p>
+<p>child component</p>
+
+<!-- the label and input id are same  -->
+<label for="item-input">Add an item:</label>
+<!-- we use #newItem as our argument that will be given in addNewItem to use to send to @output  -->
+<input type="text"  id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>

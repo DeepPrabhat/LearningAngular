@@ -1,1 +1,7 @@
-<p>parent works!</p>
+<p>parent component</p>
+<!-- item is the variable that we need to pass to child component -->
+<!-- $event stores the value that is input in child -->
+<app-child (newItemEvent)="addItem($event)"></app-child>
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
